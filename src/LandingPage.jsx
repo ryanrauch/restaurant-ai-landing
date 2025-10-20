@@ -5,7 +5,7 @@ import React from "react";
  *
  * What this includes:
  * - Sticky nav, hero, social proof, value props, how-it-works, features, analytics snapshot, pricing, live demo CTA, FAQ, footer
- * - Clear messaging for a Vapi-based phone agent integrated with OpenTable
+ * - Clear messaging for a Vapi-based phone agent integrated with [3rd party vendors]
  * - Placeholder hooks for: Vapi demo widget, Calendly/booking, and contact links
  *
  * How to use:
@@ -106,7 +106,7 @@ export default function LandingPage() {
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description:
-              "AI phone agent that answers calls, books and modifies OpenTable reservations, and handles FAQs 24/7.",
+              "AI phone agent that answers calls, books and modifies reservations, and handles FAQs 24/7.",
             offers: {
               "@type": "AggregateOffer",
               lowPrice: 99,
@@ -142,7 +142,7 @@ export default function LandingPage() {
           </h1>
           <p className="mt-4 text-lg text-gray-600">
             {BRAND_NAME} is your restaurant’s AI phone host — it answers every call, books
-            and modifies OpenTable reservations, and handles FAQs 24/7. Keep seats full
+            and modifies reservations, and handles FAQs 24/7. Keep seats full
             and staff focused on guests.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
@@ -155,7 +155,7 @@ export default function LandingPage() {
           </div>
           <div className="mt-6 flex items-center gap-4 text-sm text-gray-500">
             <div className="flex items-center gap-2"><Check /> 24/7 coverage</div>
-            <div className="flex items-center gap-2"><Check /> OpenTable integrated</div>
+            <div className="flex items-center gap-2"><Check /> 3rd party integrations</div>
             <div className="flex items-center gap-2"><Check /> Minutes-based pricing</div>
           </div>
         </div>
@@ -191,7 +191,7 @@ export default function LandingPage() {
           <h2 className="text-3xl font-semibold tracking-tight">Why restaurants choose {BRAND_NAME}</h2>
           <p className="mt-3 text-gray-600">
             Missed calls = empty tables. Your AI host answers instantly, books or updates
-            reservations in OpenTable, and frees up staff during the rush.
+            reservations, and frees up staff during the rush.
           </p>
         </div>
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -200,7 +200,7 @@ export default function LandingPage() {
             desc="Answer 100% of calls automatically — even during dinner rush or after hours."
           />
           <Feature
-            title="OpenTable native"
+            title="3rd party integrations"
             desc="Reads availability, makes new reservations, and modifies/cancels existing bookings."
           />
           <Feature
@@ -221,9 +221,9 @@ export default function LandingPage() {
         </div>
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="rounded-2xl border border-gray-200 p-6 shadow-sm">
-            <div className="text-sm font-semibold">1. Connect OpenTable</div>
+            <div className="text-sm font-semibold">1. Connect Details</div>
             <p className="mt-2 text-sm text-gray-600">
-              Share your OpenTable Restaurant ID and basic settings. We sync availability securely.
+              Share your Restaurant details. We sync availability securely.
             </p>
           </div>
           <div className="rounded-2xl border border-gray-200 p-6 shadow-sm">
@@ -244,7 +244,7 @@ export default function LandingPage() {
       {/* Features */}
       <Section id="features" className="py-16">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-          <Feature title="Reservation booking" desc="Reads real-time availability and books directly into OpenTable." />
+          <Feature title="Reservation booking" desc="Reads real-time availability and books directly into 3rd party vendors." />
           <Feature title="Modify & cancel" desc="Finds existing reservations by phone/name and updates or cancels per policy." />
           <Feature title="After-hours coverage" desc="Capture reservations and messages while you sleep — no voicemail black hole." />
           <Feature title="Multilingual" desc="Serve guests in multiple languages (English/Spanish to start)." />
@@ -308,7 +308,7 @@ export default function LandingPage() {
             features={[
               "500 included minutes",
               "1 phone number",
-              "OpenTable integration",
+              "3rd party integration",
               "Basic analytics"
             ]}
             ctaText="Start with Starter"
@@ -373,8 +373,8 @@ export default function LandingPage() {
         </div>
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           <FAQItem
-            q="Do you integrate with OpenTable?"
-            a="Yes. We use your OpenTable Restaurant ID to read availability, place new reservations, and modify or cancel existing ones per your policy."
+            q="Do you integrate with 3rd party vendors?"
+            a="Yes. We use your 3rd party vendors to read availability, place new reservations, and modify or cancel existing ones per your policy."
           />
           <FAQItem
             q="Can we keep our current phone number?"
