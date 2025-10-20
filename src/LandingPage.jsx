@@ -16,7 +16,7 @@ import React from "react";
 
 const BRAND_NAME = "VTable.ai"; // e.g., "TableLine AI"
 const CONTACT_EMAIL = "founder@yourbrand.com";
-const DEMO_NUMBER = "+1 (555) 010-1212"; // sample demo hotline (Twilio/Vapi)
+const DEMO_NUMBER = "+1 (501) 480-0415"; // sample demo hotline (Twilio/Vapi)
 const CALENDLY_URL = "#"; // replace with your Calendly / booking link
 
 const Check = () => (
