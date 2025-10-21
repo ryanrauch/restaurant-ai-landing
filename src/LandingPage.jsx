@@ -5,7 +5,7 @@ import React from "react";
  *
  * What this includes:
  * - Sticky nav, hero, social proof, value props, how-it-works, features, analytics snapshot, pricing, live demo CTA, FAQ, footer
- * - Clear messaging for a Vapi-based phone agent integrated with [3rd party vendors]
+ * - Clear messaging for a Vapi-based phone agent integrated with [3rd party vendor]
  * - Placeholder hooks for: Vapi demo widget, Calendly/booking, and contact links
  *
  * How to use:
