@@ -17,7 +17,7 @@ import React from "react";
 const BRAND_NAME = "VTable.ai"; // e.g., "TableLine AI"
 const CONTACT_EMAIL = "founder@yourbrand.com";
 const DEMO_NUMBER = "+1 (501) 480-0415"; // sample demo hotline (Twilio/Vapi)
-const CALENDLY_URL = "#"; // replace with your Calendly / booking link
+const CALENDLY_URL = "https://calendly.com/ryan-rauch/15min"; // replace with your Calendly / booking link
 
 const Check = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
@@ -167,7 +167,7 @@ export default function LandingPage() {
               <div className="mt-4 rounded-xl border border-dashed border-gray-300 p-6 text-center text-sm text-gray-500">
                 <div
                   className="calendly-inline-widget"
-                  data-url="https://calendly.com/ryan-rauch/15min"
+                  data-url={CALENDLY_URL}
                   style={{ minWidth: '320px', height: '630px' }}
                 ></div>
                 <script
