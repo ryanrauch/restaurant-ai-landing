@@ -120,7 +120,7 @@ export default function LandingPage() {
       {/* Navbar */}
       <nav className="sticky top-0 z-40 w-full border-b border-gray-200 bg-white/80 backdrop-blur">
         <Section className="flex h-16 items-center justify-between">
-          <a href="#" className="flex items-center gap-2 font-semibold">
+          <a href="#hero" className="flex items-center gap-2 font-semibold">
             <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gray-900 text-white">AI</span>
             <span>{BRAND_NAME}</span>
           </a>
@@ -413,8 +413,8 @@ export default function LandingPage() {
           <div className="text-sm text-gray-600">© {new Date().getFullYear()} {BRAND_NAME}. All rights reserved.</div>
           <div className="flex items-center gap-6 text-sm">
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-gray-600 hover:text-gray-900">Contact</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Privacy</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Terms</a>
+            <a href="/privacy" className="text-gray-600 hover:text-gray-900">Privacy</a>
+            <a href="/terms" className="text-gray-600 hover:text-gray-900">Terms</a>
           </div>
         </Section>
       </footer>
