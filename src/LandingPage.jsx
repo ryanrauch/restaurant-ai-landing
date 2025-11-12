@@ -121,7 +121,11 @@ export default function LandingPage() {
       <nav className="sticky top-0 z-40 w-full border-b border-gray-200 bg-white/80 backdrop-blur">
         <Section className="flex h-16 items-center justify-between">
           <a href="#hero" className="flex items-center gap-2 font-semibold">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gray-900 text-white">AI</span>
+            <img
+              src="/vtable2.png"
+              alt="VTable.ai logo"
+              className="h-8 w-8 object-contain rounded-xl"
+            />
             <span>{BRAND_NAME}</span>
           </a>
           <div className="hidden items-center gap-6 md:flex">
