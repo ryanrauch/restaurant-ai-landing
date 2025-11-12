@@ -302,7 +302,7 @@ export default function LandingPage() {
         </div>
       </Section>
 
-      {/* Pricing */}
+      {/* Pricing
       <Section id="pricing" className="py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-semibold tracking-tight">Simple pricing</h2>
@@ -350,6 +350,34 @@ export default function LandingPage() {
         <p className="mt-4 text-center text-xs text-gray-500">
           Overages billed per-minute. Volume discounts available.
         </p>
+      </Section> */}
+      
+      {/* Early Adopter CTA */}
+      <Section id="pricing" className="py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-semibold tracking-tight">
+            Apply to be an Early Adopter
+          </h2>
+          <p className="mt-3 text-gray-600">
+            We’re currently onboarding a limited number of restaurants to test our AI phone host.
+            Early adopters get discounted pricing, priority setup, and direct input into product features.
+          </p>
+
+          <div className="mt-8">
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-xl bg-gray-900 px-6 py-3 text-sm font-medium text-white hover:bg-gray-800 transition"
+            >
+              Apply Now
+            </a>
+          </div>
+
+          <p className="mt-4 text-xs text-gray-500">
+            Limited spots available — early adopters will be contacted for a quick intro call.
+          </p>
+        </div>
       </Section>
 
       {/* Demo CTA */}
