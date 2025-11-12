@@ -48,39 +48,39 @@ const Feature = ({ title, desc, icon }) => (
   </div>
 );
 
-const PricingCard = ({ tier, price, description, features, ctaText, highlighted }) => (
-  <div className={`flex flex-col rounded-2xl border p-6 shadow-sm ${highlighted ? "border-gray-900 bg-gray-900 text-white" : "border-gray-200 bg-white"}`}>
-    <div className="flex items-baseline justify-between">
-      <h3 className="text-lg font-semibold">{tier}</h3>
-      {highlighted && <span className="rounded-full bg-white/10 px-3 py-1 text-xs">Popular</span>}
-    </div>
-    <div className="mt-4 flex items-end gap-1">
-      <div className="text-3xl font-semibold lg:text-4xl">{price}</div>
-      <div className={`pb-1 text-sm ${highlighted ? "text-white/70" : "text-gray-500"}`}>/month</div>
-    </div>
-    <p className={`mt-2 text-sm ${highlighted ? "text-white/80" : "text-gray-600"}`}>{description}</p>
+// const PricingCard = ({ tier, price, description, features, ctaText, highlighted }) => (
+//   <div className={`flex flex-col rounded-2xl border p-6 shadow-sm ${highlighted ? "border-gray-900 bg-gray-900 text-white" : "border-gray-200 bg-white"}`}>
+//     <div className="flex items-baseline justify-between">
+//       <h3 className="text-lg font-semibold">{tier}</h3>
+//       {highlighted && <span className="rounded-full bg-white/10 px-3 py-1 text-xs">Popular</span>}
+//     </div>
+//     <div className="mt-4 flex items-end gap-1">
+//       <div className="text-3xl font-semibold lg:text-4xl">{price}</div>
+//       <div className={`pb-1 text-sm ${highlighted ? "text-white/70" : "text-gray-500"}`}>/month</div>
+//     </div>
+//     <p className={`mt-2 text-sm ${highlighted ? "text-white/80" : "text-gray-600"}`}>{description}</p>
 
-    <ul className={`mt-4 space-y-2 text-sm ${highlighted ? "text-white" : "text-gray-700"}`}>
-      {features.map((f, i) => (
-        <li key={i} className="flex items-start gap-2">
-          <span className={`mt-0.5 ${highlighted ? "text-white" : "text-gray-900"}`}><Check /></span>
-          <span>{f}</span>
-        </li>
-      ))}
-    </ul>
+//     <ul className={`mt-4 space-y-2 text-sm ${highlighted ? "text-white" : "text-gray-700"}`}>
+//       {features.map((f, i) => (
+//         <li key={i} className="flex items-start gap-2">
+//           <span className={`mt-0.5 ${highlighted ? "text-white" : "text-gray-900"}`}><Check /></span>
+//           <span>{f}</span>
+//         </li>
+//       ))}
+//     </ul>
 
-    <a
-      href={CALENDLY_URL}
-      className={`mt-6 inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium transition ${
-        highlighted
-          ? "bg-white text-gray-900 hover:opacity-90"
-          : "bg-gray-900 text-white hover:bg-gray-800"
-      }`}
-    >
-      {ctaText}
-    </a>
-  </div>
-);
+//     <a
+//       href={CALENDLY_URL}
+//       className={`mt-6 inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium transition ${
+//         highlighted
+//           ? "bg-white text-gray-900 hover:opacity-90"
+//           : "bg-gray-900 text-white hover:bg-gray-800"
+//       }`}
+//     >
+//       {ctaText}
+//     </a>
+//   </div>
+// );
 
 const FAQItem = ({ q, a }) => (
   <details className="group rounded-xl border border-gray-200 p-4">
@@ -351,7 +351,7 @@ export default function LandingPage() {
           Overages billed per-minute. Volume discounts available.
         </p>
       </Section> */}
-      
+
       {/* Early Adopter CTA */}
       <Section id="pricing" className="py-16">
         <div className="mx-auto max-w-3xl text-center">
