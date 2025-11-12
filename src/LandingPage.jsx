@@ -165,8 +165,16 @@ export default function LandingPage() {
               <div className="text-sm font-semibold text-gray-800">Live Call Preview</div>
               <p className="mt-1 text-sm text-gray-600">Sample restaurant phone flow</p>
               <div className="mt-4 rounded-xl border border-dashed border-gray-300 p-6 text-center text-sm text-gray-500">
-                {/* Replace this box with your embedded Vapi web widget if available */}
-                Vapi web call widget goes here.
+                <div
+                  className="calendly-inline-widget"
+                  data-url="https://calendly.com/ryan-rauch/15min"
+                  style={{ minWidth: '320px', height: '630px' }}
+                ></div>
+                <script
+                  type="text/javascript"
+                  src="https://assets.calendly.com/assets/external/widget.js"
+                  async
+                ></script>
               </div>
               <div className="mt-4 text-xs text-gray-500">
                 Prefer phone? Call our demo line: <span className="font-medium text-gray-700">{DEMO_NUMBER}</span>
